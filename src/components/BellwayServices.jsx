@@ -44,7 +44,7 @@ const BellwayServices = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
@@ -57,21 +57,21 @@ const BellwayServices = () => {
   };
 
   return (
-    <section className="w-full h-screen bg-[#F2F3F4] text-white flex flex-col md:flex-row overflow-hidden px-2 md:px-20 min-h-screen">
+    <section className="w-full h-screen  bg-zinc-100 text-white flex flex-col lg:flex-row overflow-hidden px-2 lg:px-20 min-h-screen">
       {/* Left Vertical Heading */}
-      <div className="w-full md:w-[150px] flex justify-center items-center">
-        <div className="flex flex-col items-center justify-center transform md:-rotate-90 my-10 md:my-0">
-          <h1 className="text-black text-6xl md:text-9xl font-bold leading-none">
+      <div className="w-full lg:w-[150px] flex justify-center items-center my-10 lg:my-0">
+        <div className="flex flex-col items-center justify-center transform lg:-rotate-90 ">
+          <h1 className="text-black text-6xl lg:text-9xl font-bold leading-none">
             BELLWAY
           </h1>
-          <h1 className="text-black text-4xl md:text-7xl font-bold leading-none">
+          <h1 className="text-black text-4xl lg:text-7xl font-bold leading-none">
             SERVICES
           </h1>
         </div>
       </div>
 
       {/* Right Cards */}
-      <div className="flex-1 flex items-center flex-col md:flex-row justify-end gap-4 px-4 overflow-x-auto">
+      <div className="flex-1 flex items-center flex-col lg:flex-row justify-end gap-4  overflow-x-auto mb-10 lg:my-0">
         {services.map((service, index) => {
           const isActive = activeIndex === index;
 
@@ -79,17 +79,19 @@ const BellwayServices = () => {
             <div
               key={index}
               onClick={() => handleClick(index)}
-              className={`group relative w-full md:w-[150px] ${
+              className={`group relative w-full  lg:w-[140px] 
+                ${
                 isMobile
                   ? isActive
-                    ? "h-[1000px]"
-                    : "h-[800px]"
-                  : "md:h-[550px] hover:w-[500px]"
-              } transition-all duration-500 bg-cover bg-center rounded-xl overflow-hidden cursor-pointer shadow-lg`}
+                    ? "h-[70vh] "
+                    : "h-[30vh] "
+                  : " lg:h-[550px] hover:w-[400px]"
+              } 
+              transition-all duration-500 bg-cover bg-center rounded-xl overflow-hidden cursor-pointer shadow-lg`}
               style={{ backgroundImage: `url(${service.image})` }}
             >
               {/* Title */}
-              <div className="absolute bottom-0 w-full text-center p-4 bg-black opacity-70">
+              <div className="absolute bottom-0 w-full text-center p-4 bg-black opacity-80">
                 <h2 className="text-sm font-bold text-white">
                   {service.title}
                 </h2>
@@ -97,7 +99,7 @@ const BellwayServices = () => {
 
               {/* Description (shown on hover or on mobile tap) */}
               <div
-                className={`absolute inset-0 bg-black/60 p-6 flex items-center justify-center transition-opacity duration-500 ${
+                className={`absolute inset-0 bg-black/70 p-6 flex items-center justify-center transition-opacity duration-500 ${
                   isMobile
                     ? isActive
                       ? "opacity-100"
@@ -105,7 +107,7 @@ const BellwayServices = () => {
                     : "group-hover:opacity-100 opacity-0"
                 }`}
               >
-                <p className="text-lg text-white text-center max-w-md">
+                <p className="text-sm lg:text-lg text-white text-center ">
                   {service.description}
                 </p>
               </div>

@@ -86,8 +86,8 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="relative z-10 px-2 md:px-20 md:my-20 bg-white select-none py-10">
-      <h1 className="text-center text-3xl md:text-5xl font-semibold text-black mb-10">
+    <div className="relative z-10 px-2 lg:px-20  bg-zinc-100  select-none py-10 flex flex-col items-center justify-center">
+      <h1 className="text-center text-3xl lg:text-4xl font-semibold text-black mb-10">
         See Our Creations
       </h1>
       <div
@@ -100,13 +100,13 @@ const HomeSlider = () => {
         style={{ scrollbarWidth: "none" }}
       >
         <div
-          className="flex gap-3 md:gap-4 px-2 py-4 select-none"
+          className="flex gap-3 lg:gap-4 px-2 py-4 select-none"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className="min-w-[280px] h-[270px] md:min-w-[360px] md:h-[310px] flex-shrink-0 text-center bg-white rounded-xl shadow-xl p-1 hover:scale-[1.05] transition-transform duration-300 select-none"
+              className="min-w-[280px] h-[270px] lg:min-w-[400px] lg:h-[310px] flex-shrink-0 text-center bg-white rounded-xl shadow p-1 hover:scale-[1.05] transition-transform duration-300 select-none"
             >
               <img
                 src={image.src}
@@ -123,12 +123,12 @@ const HomeSlider = () => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center mt-4 gap-2 select-none">
+      <div className="flex justify-center mt-20 gap-2 select-none">
         {images.map((_, index) => (
           <button
             key={index}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "bg-black scale-110" : "bg-zinc-400"
+              index === currentSlide ? "bg-[#d82c2c] scale-150 " : "bg-zinc-200"
             }`}
             onClick={() => scrollToSlide(index)}
           ></button>

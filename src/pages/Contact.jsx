@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import ContactCard from "../components/ContactCard";
-import FormWrapper from "../components/FormWrapper";
+
 import LocateUs from "../components/LocateUs";
-// import Fw from "../components/FW";
-import ContactSalesForm from "../components/ContactSalesForm";
 import { Helmet } from "react-helmet";
+
+import ContactCardUnified from "./ContactCardUnified";
 
 function Contact() {
   return (
@@ -21,10 +20,11 @@ function Contact() {
         />
       </Helmet>
 
-      {/* <ContactSalesForm/> */}
-      <ContactCard />
+
+      <ContactCardUnified />
       <LocateUs />
-      <FormWrapper />
+   
+      
     </>
   );
 }

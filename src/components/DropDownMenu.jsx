@@ -21,7 +21,7 @@ export default function DropdownMenu({
           onMouseLeave={() => setOpenSubmenu(null)}
         >
           {/* Submenu Trigger */}
-          <div className="flex justify-between items-center px-4 py-2 text-white hover:bg-[#D82C2C] cursor-pointer">
+          <div className="flex justify-between items-center p-3 text-white hover:bg-[#D82C2C] cursor-pointer">
             {item.title}
             <FaChevronRight className="ml-2 text-sm" />
           </div>
@@ -39,7 +39,7 @@ export default function DropdownMenu({
                   <Link
                     key={sub.id}
                     to={sub.path}
-                    className="block px-4 py-2 text-white hover:bg-[#D82C2C] transition no-underline"
+                    className="block p-3 text-white hover:bg-[#D82C2C] transition no-underline"
                   >
                     {sub.title}
                   </Link>
@@ -53,7 +53,7 @@ export default function DropdownMenu({
         <Link
           key={item.id}
           to={item.path}
-          className="block px-4 py-2 text-white hover:bg-[#D82C2C] transition no-underline"
+          className="block p-3 text-white hover:bg-[#D82C2C] transition no-underline"
         >
           {item.title}
         </Link>
@@ -98,6 +98,8 @@ export default function DropdownMenu({
           </motion.div>
         )}
       </AnimatePresence>
+
+      
     </div>
   );
 }

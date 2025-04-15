@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
+import { FaAngleDoubleDown } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 const Header = ({
   title,
   para1,
@@ -11,9 +12,9 @@ const Header = ({
   demoLink, // 👈 new prop
 }) => {
   return (
-    <header className="relative w-full bg-black text-white px-2 md:px-20 py-10 md:py-0 min-h-screen flex items-center justify-evenly md:justify-between flex-col md:flex-row gap-10">
+    <header className="relative w-full bg-black text-white px-2 lg:px-20 py-10 lg:py-0 min-h-screen flex items-center justify-evenly lg:justify-between flex-col lg:flex-row gap-10">
       {/* Left Side */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2">
         {title && (
           <h1 className="text-4xl md:text-5xl font-bold my-10 md:my-0  md:leading-16 bg-gradient-to-r from-[#D82C2C] to-white bg-clip-text text-transparent">
             {title}
@@ -58,7 +59,7 @@ const Header = ({
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-1/2 flex md:justify-end items-center mt-6 md:mt-0">
+      <div className="w-full lg:w-1/2 flex lg:justify-end items-center">
         {mediaType === "video" ? (
           <video
             autoPlay
@@ -75,9 +76,14 @@ const Header = ({
             src={mediaSrc}
             alt="Media"
             loading="lazy"
-            className="rounded-lg w-full md:max-w-[80%] object-cover"
+            className="rounded-lg w-full  object-cover"
           />
         )}
+      </div>
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce rounded-full bg-zinc-800 p-4 text-white cursor-pointer">
+        <Link to="#services" className="text-2xl">
+        <FaAngleDoubleDown />
+      </Link>
       </div>
     </header>
   );

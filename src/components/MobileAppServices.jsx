@@ -4,7 +4,7 @@ import mobileservice from "../assets/mobileservice.jpg";
 export default function MobileAppServices() {
  
   return (
-    <div className="bg-zinc-100 py-16 px-4 md:px-20 rounded mb-10 overflow-hidden">
+    <div className="bg-zinc-100 py-20 px-2 md:px-20 rounded  overflow-hidden">
       <div className="flex flex-col md:flex-row items-center justify-center gap-12">
         {/* Left Content */}
         <motion.div
@@ -14,7 +14,7 @@ export default function MobileAppServices() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-zinc-900 text-3xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-zinc-900 text-3xl md:text-5xl font-semibold leading-tight">
             Mobile Application Development Services
           </h1>
           <p className="text-zinc-800 text-lg leading-relaxed">

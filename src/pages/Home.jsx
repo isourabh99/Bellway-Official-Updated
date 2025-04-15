@@ -44,14 +44,15 @@ const Home = () => {
         description="Being a mobile app development company, we have been fortunate in serving clients from different industries. Here is the list of all industries for whom we have provided Mobile app development service."
         industries={industriesList}
       />
+     
       <SDLC />
-      <HomeSlider />
       <Serve
         heading="Solutions"
         description="Being a Mobile App development and web development company Bellway consistently acumen into latest Technologies for providing nothing less than best to our Clients and Prospects."
         industries={solutionslist}
       />
       <Testimonials />
+      <HomeSlider />
       <Faq
         data={faq1}
         title="Frequently Asked Questions"

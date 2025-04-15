@@ -54,7 +54,7 @@ const tagVariant = {
 
 const ErpOfferings = () => {
   return (
-    <div className="h-screen relative flex flex-col md:flex-row items-start justify-between w-full px-6 md:px-20 py-20 gap-16 bg-black text-white overflow-hidden">
+    <div className=" relative flex flex-col md:flex-row items-start justify-between w-full px-2 md:px-20 py-20 gap-16 bg-black text-white overflow-hidden">
       {/* LEFT SECTION */}
       <motion.div
         initial={{ opacity: 0, x: -60 }}
@@ -63,7 +63,7 @@ const ErpOfferings = () => {
         viewport={{ once: true }}
         className="md:w-1/2 z-10"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-10 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-semibold mb-10 leading-tight">
           ERP Services by <br />
           <span className="text-[#D82C2C]">Bellway Infotech</span>
         </h1>

@@ -14,14 +14,14 @@ export default function Faq({
   };
 
   return (
-    <div className="bg-black text-white py-16 px-4 md:px-20">
+    <div className="bg-black text-white py-20 px-2 lg:px-20">
       <h2
-        className="text-3xl md:text-4xl font-bold mb-10 text-center"
+        className="text-3xl lg:text-4xl font-semibold mb-20 text-center"
         style={{ color: accentColor }}
       >
         {title}
       </h2>
-      <div className="space-y-4 mx-auto">
+      <div className="space-y-10 mx-auto">
         {data.map((faq, index) => (
           <div
             key={index}
@@ -46,8 +46,8 @@ export default function Faq({
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="px-6 pb-4 text-zinc-300"
+                  transition={{ duration: 0.3 , ease: "easeInOut" }}
+                  className="px-6 pb-4 text-zinc-500"
                 >
                   {faq.answer}
                 </motion.div>

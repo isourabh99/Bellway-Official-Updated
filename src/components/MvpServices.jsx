@@ -50,7 +50,7 @@ const tagVariant = {
 
 const MvpServices = () => {
   return (
-    <div className="w-full bg-white my-20 px-2 md:px-20 text-gray-900 relative overflow-hidden">
+    <div className="w-full bg-zinc-100 py-20 px-2 md:px-20 text-zinc-900  relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const MvpServices = () => {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-[#D82C2C] mb-4">
+        <h2 className="text-4xl md:text-5xl font-semibold ] mb-4">
           MVP Development
         </h2>
         <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
@@ -136,9 +136,7 @@ const MvpServices = () => {
         </div>
       </motion.div>
 
-      {/* Background Effects */}
-      <div className="absolute w-72 h-72 bg-[#ffb2d0] rounded-full blur-3xl opacity-20 top-10 right-20 z-0" />
-      <div className="absolute w-72 h-72 bg-[#d0f0ff] rounded-full blur-3xl opacity-20 bottom-20 left-10 z-0" />
+   
     </div>
   );
 };

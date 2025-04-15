@@ -33,42 +33,50 @@ function AI() {
       />
       <SplitSection
         imageSrc={ml}
-        heading="Innovative Solutions"
-        content="Machine learning is a branch of artificial intelligence (AI) focused on developing algorithms and models that enable computers to perform tasks without explicit instructions. Using data-driven approaches, these systems identify patterns, make predictions, and improve over time. Techniques like supervised, unsupervised, and reinforcement learning are applied across fields such as natural language processing, image recognition, and predictive analytics, making machine learning essential for solving complex problems and advancing technology."
-        imageOnLeft={true}
+        heading="Matchine Learning"
+        content="Machine Learning is a vital branch of Artificial Intelligence (AI) that focuses on building systems capable of learning from data and improving their performance over time without direct human programming. By analyzing large volumes of information, machine learning algorithms detect patterns, make predictions, and continuously refine their decisions through experience.
+
+This technology uses different learning methods such as supervised learning, which relies on labeled data for training; unsupervised learning, which explores unlabeled data to find hidden structures; and reinforcement learning, where systems learn optimal strategies through feedback from actions taken. These techniques are applied in areas like natural language processing, image and speech recognition, recommendation engines, autonomous systems, and predictive analytics — making machine learning an essential force behind modern technology and innovation."
+
+        // imageOnLeft={true}
       />
       <SplitSection
         imageSrc={dl}
         heading="Deep Learning"
-        content={`Deep learning is a subset of machine learning that uses multi-layered neural networks to model complex patterns in data—much like the human brain. It's the backbone of modern AI applications like image and speech recognition, natural language processing, and autonomous systems.
+        content="Deep Learning is a specialized branch of Machine Learning that uses multi-layered neural networks inspired by the human brain to process and understand complex data. These networks allow machines to automatically detect intricate patterns and relationships without manual feature engineering, making them highly effective for solving advanced computational problems.
 
-At our company, we harness deep learning to build advanced models that automate complex tasks, enhance decision-making, and unlock powerful insights. By leveraging big data and cutting-edge neural networks, we help businesses drive innovation, efficiency, and a clear competitive edge.`}
-        imageOnLeft={false}
+Deep Learning powers some of today’s most transformative AI applications — from image and speech recognition to natural language processing, autonomous vehicles, and intelligent automation. At our company, we utilize deep learning to develop sophisticated models that streamline decision-making, automate complex tasks, and uncover actionable insights. By combining large datasets with cutting-edge neural architectures, we help businesses innovate faster, operate more efficiently, and gain a strong competitive advantage in their industries."
+
+        // imageOnLeft={false}
       />
       <SplitSection
         imageSrc={nlp}
         heading="Natural Language Processing"
-        content={`Natural Language Processing (NLP) is a key branch of AI that enables machines to understand, interpret, and respond to human language. At our company, we leverage NLP to build intelligent solutions like chatbots, sentiment analysis tools, and automated document processing systems. These technologies help businesses enhance customer service, streamline operations, and gain deep insights from unstructured text data. By transforming how companies interact with both data and customers, our NLP solutions drive smarter communication, improved efficiency, and stronger market awareness.`}
-        imageOnLeft={true}
+        content={`Natural Language Processing (NLP) is a powerful subfield of Artificial Intelligence (AI) that enables machines to read, understand, and interpret human language in a meaningful way. By bridging the gap between human communication and computer understanding, NLP makes it possible for systems to process large volumes of text, voice, and written data accurately and efficiently.
+
+At our company, we apply NLP to develop advanced solutions like AI-powered chatbots, sentiment analysis platforms, and automated document handling tools. These intelligent systems empower businesses to deliver better customer experiences, optimize workflows, and extract actionable insights from unstructured language data — ultimately driving smarter communication, improved decision-making, and lasting competitive growth.`}
+
+        // imageOnLeft={true}
       />
       <SplitSection
         imageSrc={rap}
         heading="Robotic Process Automation"
-        content={`Robotic Process Automation (RPA) uses software bots to automate repetitive, rule-based tasks, improving speed and accuracy in areas like finance, customer service, and supply chain management. It draws from AI, computer science, and business process management to streamline operations and boost productivity.
+        content={`Robotic Process Automation (RPA) leverages software bots to handle repetitive and rule-based tasks, allowing businesses to enhance speed, precision, and consistency across operations. By mimicking human actions in digital systems, RPA streamlines workflows in finance, customer service, supply chain, and more — all without altering existing infrastructure.
 
-At our company, we implement RPA to reduce manual workloads, cut costs, and enhance process efficiency. Our solutions free up your team for more strategic work while increasing scalability and agility—helping your business thrive in an increasingly automated world.
+At our company, we harness the power of RPA to reduce manual workloads, minimize errors, and optimize operational efficiency. Our automation solutions free up valuable human resources for higher-value strategic initiatives, while improving scalability, agility, and cost-effectiveness. This enables businesses to stay competitive and adapt seamlessly in a fast-evolving digital landscape.`}
 
-`}
-        imageOnLeft={false}
+        // imageOnLeft={false}
       />
       <SplitSection
         imageSrc={cv}
         heading="Computer vision"
-        content={`Computer vision is a branch of AI that enables machines to interpret and understand visual information, similar to human sight. It involves algorithms that recognize patterns, objects, and scenes in images and videos. Applications span facial recognition, autonomous vehicles, medical imaging, and augmented reality.
+        content={`Computer Vision is a dynamic branch of Artificial Intelligence (AI) that enables machines to interpret and understand visual data, akin to human sight. It involves the use of sophisticated algorithms that can analyze images, videos, and other visual inputs to detect patterns, recognize objects, and interpret scenes with high accuracy.
 
-At our company, we harness advanced computer vision to automate visual tasks like quality inspection, inventory tracking, and security analysis. Our deep learning-powered solutions deliver high accuracy, real-time decision-making, and operational efficiency—helping businesses reduce manual work, improve precision, and stay ahead in a data-driven world.
-`}
-        imageOnLeft={true}
+The applications of computer vision are vast and transformative, ranging from facial recognition and autonomous vehicles to medical imaging and augmented reality. This technology has revolutionized industries such as healthcare, automotive, retail, and security by automating tasks that once required human observation and intervention.
+
+At our company, we apply cutting-edge computer vision techniques to automate visual processes like quality inspection, inventory management, and security monitoring.`}
+
+        // imageOnLeft={true}
       />
       <Faq
         data={FaqAi}

@@ -56,7 +56,7 @@ const CaseStudyDetail = () => {
         variants={containerVariants}
       >
         {/* Image and Text */}
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-col lg:flex-row gap-10">
           <motion.div className="flex-1" variants={fadeInUp}>
             <img
               src={card.image}
@@ -66,7 +66,7 @@ const CaseStudyDetail = () => {
           </motion.div>
 
           <motion.div className="flex-1" variants={fadeInUp}>
-            <h1 className="text-5xl font-extrabold text-[#d82c2c] mb-4">
+            <h1 className="text-5xl font-semibold text-[#d82c2c] mb-4">
               {card.title}
             </h1>
             <p className="text-sm font-medium text-primary-600 uppercase tracking-widest mb-4">

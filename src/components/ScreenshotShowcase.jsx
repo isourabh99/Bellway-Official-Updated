@@ -5,8 +5,8 @@ import iphone14 from "../assets/iphone14.png";
 
 const ScreenshotShowcase = ({ screenshots = [] }) => {
   return (
-    <section className="w-full bg-zinc-100  px-4 md:px-20 pb-20">
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-zinc-800 mb-16">
+    <section className="w-full bg-zinc-100  px-4 md:px-20 py-20">
+      <h2 className="text-4xl font-semibold text-center text-zinc-800 mb-20">
         Product Preview
       </h2>
 

@@ -8,7 +8,7 @@ const WebAppServices = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="containerx px-2 md:px-20 py-10 md:py-20 flex flex-col md:flex-row justify-between bg-zinc-100 items-center rounded overflow-hidden mb-10"
+      className="containerx px-2 md:px-20 py-10 md:py-20 flex flex-col md:flex-row justify-between bg-zinc-100 items-center rounded overflow-hidden "
     >
       {/* Text Section */}
       <motion.div

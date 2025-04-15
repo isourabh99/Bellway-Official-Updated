@@ -16,13 +16,13 @@ const item = {
 
 const ProductBenefits = ({ benefits, title = `Our Product Benefits` }) => {
   return (
-    <section className="w-full min-h-screen bg-zinc-100 px-4 md:px-20 py-20 flex flex-col justify-center items-center">
+    <section className="w-full  bg-zinc-100 px-4 md:px-20 py-20 flex flex-col justify-center items-center">
       {/* Gradient Title */}
       <motion.h2
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl md:text-5xl font-bold text-center     mb-20"
+        className="text-4xl  font-semibold text-center     mb-20"
       >
         {title}
       </motion.h2>

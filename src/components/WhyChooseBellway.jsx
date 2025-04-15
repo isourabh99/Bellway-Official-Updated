@@ -29,12 +29,12 @@ const WhyChooseBellway = ({
   features = featuresWithIcons,
 }) => {
   return (
-    <section className="w-full  py-20 px-2 md:px-20">
+    <section className="w-full  py-20 px-2 md:px-20 0">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-4xl md:text-6xl font-bold text-center text-zinc-800 mb-16"
+        className="text-4xl  font-semibold text-center text-zinc-800 mb-20"
       >
         {heading}
       </motion.h2>

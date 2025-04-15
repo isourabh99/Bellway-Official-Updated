@@ -98,13 +98,13 @@ export default function NavTailwind() {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 w-full z-50 bg-black shadow-md"
     >
-      <div className="w-full px-4 md:px-20 py-3 flex justify-between items-center">
+      <div className="w-full px-2 lg:px-20 py-3 flex justify-between items-center">
         <Link to="/" className="text-white font-bold no-underline">
           <img src={logo} alt="Johri CPA Logo" className="w-40 ml-1" />
         </Link>
 
         {/* === Desktop Menu === */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <Link
             to="/"
             className={`text-white no-underline ${
@@ -162,7 +162,7 @@ export default function NavTailwind() {
         </div>
 
         {/* === Mobile Menu Icon === */}
-        <div className="md:hidden text-white text-2xl" onClick={toggleMenu}>
+        <div className="lg:hidden text-white text-2xl" onClick={toggleMenu}>
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>

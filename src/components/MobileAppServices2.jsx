@@ -7,7 +7,7 @@ import { IoHardwareChip } from "react-icons/io5";
 
 export default function MobileAppServices2() {
   return (
-    <div className="relative px-4 md:px-20 my-20 w-full flex flex-col md:flex-row gap-6">
+    <div className="relative px-2 md:px-20 py-20 w-full flex flex-col md:flex-row gap-6 bg-zinc-100">
       {/* Native App Development */}
       <motion.div
         className="bg-zinc-800 md:w-1/2 p-4  rounded-3xl flex flex-col justify-between"
@@ -38,7 +38,7 @@ export default function MobileAppServices2() {
       <div className="md:w-1/2 flex flex-col gap-6">
         {/* Cross-Platform App Dev */}
         <motion.div
-          className="bg-zinc-200 p-4 md:p-10 rounded-3xl relative"
+          className="bg-zinc-200 p-4 md:p-4 rounded-3xl relative"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -46,7 +46,7 @@ export default function MobileAppServices2() {
         >
           <Link
             to="/contact"
-            className="absolute top-4 right-4 w-fit bg-black text-white p-3 rounded-full flex items-center justify-center gap-2 hover:scale-110 transition-all duration-300"
+            className="absolute top-4 right-4 w-fit bg-black text-white p-4 rounded-full flex items-center justify-center gap-2 hover:scale-110 transition-all duration-300"
           >
             <FiArrowUpRight size={20} />
           </Link>

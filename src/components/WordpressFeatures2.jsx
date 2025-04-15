@@ -41,10 +41,10 @@ const features = [
 
 const WordpressFeatures2 = () => {
   return (
-    <section className="bg-[#1B1B1B] py-20 px-6 md:px-20 text-white">
+    <section className="bg-[#1B1B1B] py-20 px-2 md:px-20 text-white">
       <div className="max-w-7xl mx-auto">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold mb-14 text-center"
+          className="text-4xl  font-semibold mb-24 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

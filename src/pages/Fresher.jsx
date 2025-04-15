@@ -1,10 +1,5 @@
-import React from "react";
-import Header from "../components/Header";
-import career from "../assets/foundation11.png";
-import OpenVacancies from "../components/OpenVacancies";
-import WorkSummaryForm from "../components/WorkSummaryForm";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { motion } from 'motion/react';
+import React from 'react'
 import {
   FaUserTie,
   FaLaptopCode,
@@ -12,33 +7,13 @@ import {
   FaGlobeAsia,
   FaHandsHelping,
 } from "react-icons/fa";
-import { Helmet } from "react-helmet";
-import ApplySection from "../components/ApplySection";
-
-function Career() {
+import FresherForm from '../components/FresherForm';
+  
+function Fresher() {
   return (
     <>
-      <Helmet>
-        <title>BELLWAY INFOTECH - Career With Us</title>
-        <meta
-          name="description"
-          content="At Bellway Infotech, we offer great career opportunities in UI/UX design, software development, cloud computing, app development, and more. Build your career with us!"
-        />
-        <meta
-          name="keywords"
-          content="career opportunities, jobs at Bellway Infotech, software development jobs, cloud computing jobs, app development careers, UI/UX design careers, IT jobs, tech careers, job openings, work with Bellway Infotech, join Bellway Infotech, careers in technology, IT professionals, software engineers, UX/UI designers"
-        />
-      </Helmet>
-
-      <Header
-        title="Career With Us"
-        para1="At Bellway Infotech, we’re not just a company; we’re a community of forward-thinkers, innovators, and problem-solvers. We believe in nurturing talent and providing our team members with an environment where they can thrive, grow, and make an impact. If you're passionate about technology and eager to work on exciting projects that drive real business value, Bellway Infotech could be the perfect place for you."
-        mediaSrc={career}
-      />
-      <OpenVacancies />
-
-      <div className="bg-black py-20 px-4 md:px-20">
-        <div className="flex flex-col md:flex-row items-center gap-10">
+      <div className="bg-black  px-2 md:px-20 min-h-screen">
+        <div className="flex flex-col md:flex-row items-center md:gap-10">
           {/* LEFT ANIMATED CONTENT */}
           <motion.div
             className="w-full md:w-1/2 space-y-8"
@@ -56,21 +31,21 @@ function Career() {
             >
               Now Hiring
             </motion.p>
-
             {/* Main Heading */}
-            <motion.h2
-              className="text-4xl font-bold text-white leading-tight"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              Join Our Team <br />
-              <span className="text-[#D82C2C]">Create Your Future</span>
-            </motion.h2>
+            <p className="text-[#D82C2C] text-4xl tracking-wider leading-0">
+              Join Our Team as Freshers Level
+            </p>
 
+            <span className="text-3xl text-white hover:bg-gradient-to-r from-[#D82C2C] to-white hover:text-transparent hover:bg-clip-text transition-all duration-300">
+              "Every great developer was once a beginner.
+            </span>
+            <span className="text-3xl text-white hover:bg-gradient-to-r from-[#D82C2C] to-white hover:text-transparent hover:bg-clip-text transition-all duration-300">
+              {" "}
+              Welcome to a journey of endless learning and innovation!"
+            </span>
             {/* Description */}
             <motion.p
-              className="text-zinc-300 text-lg"
+              className="text-zinc-300 text-lg my-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -80,7 +55,6 @@ function Career() {
               We're hiring across multiple domains — apply now and be part of
               something big.
             </motion.p>
-
             {/* Perks List */}
             <motion.ul
               className="space-y-5"
@@ -122,7 +96,6 @@ function Career() {
                 </motion.li>
               ))}
             </motion.ul>
-
             {/* Call to Action Button */}
             <motion.div
               className="pt-6"
@@ -130,25 +103,23 @@ function Career() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="inline-block bg-[#D82C2C] hover:bg-red-700 transition px-6 py-3 rounded-full text-white font-semibold text-lg"
               >
-                Contact US
-              </Link>
+                Contact Us
+              </a>
             </motion.div>
           </motion.div>
 
           {/* RIGHT SIDE - FORM */}
-          <div className="w-full md:w-1/2">
-            <WorkSummaryForm />
+          <div className="w-full md:w-1/2 py-10">
+            <FresherForm />
           </div>
         </div>
       </div>
-      
-      <ApplySection />
     </>
   );
 }
 
-export default Career;
+export default Fresher

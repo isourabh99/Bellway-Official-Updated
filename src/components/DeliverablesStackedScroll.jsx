@@ -142,20 +142,18 @@ const deliverablesData = [
 
 const DeliverablesStackedScroll = () => {
   return (
-    <section className="relative h-[500vh]  text-white">
+    <section className="relative min-h-[500vh]  text-white bg-black ">
       {deliverablesData.map((deliverable, index) => (
         <div
           key={index}
-          className="sticky top-0 h-screen w-full flex flex-col items-center justify-center px-2 md:px-20"
+          className="sticky top-0 min-h-screen w-full flex flex-col items-center justify-center px-2 md:px-20 bg-black py-10"
           style={{ zIndex: index + 1 }}
         >
           <div className="absolute inset-0 bg-black  -z-10" />
 
-          <div className="text-center mb-12 flex items-center gap-4">
+          <div className="text-center mb-20 flex items-center gap-4">
             <deliverable.icon className="text-5xl  text-white" />
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              {deliverable.title}
-            </h2>
+            <h2 className="text-4xl  font-semibold">{deliverable.title}</h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  w-full">

@@ -50,12 +50,12 @@ const features = [
 
 const WordPressFeatures = () => {
   return (
-    <div className="bg-zinc-100 py-20 px-2 md:px-20">
+    <div className="bg-zinc-100 py-20  px-2 md:px-20">
       <motion.h2
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-10 text-center"
+        className="text-4xl font-semibold mb-20 text-center "
       >
         Powerful WordPress Features
       </motion.h2>

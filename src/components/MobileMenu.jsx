@@ -11,16 +11,16 @@ const menuVariants = {
 export default function MobileMenu({ onClose, dropdowns, products }) {
   return (
     <motion.div
-      className="md:hidden absolute top-[100%] left-0 w-full bg-black text-white z-40 shadow-md h-auto overflow-scroll"
+      className="lg:hidden absolute   w-full bg-black text-white z-40 shadow-md min-h-screen "
       variants={menuVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-y-scroll">
         <Link
           to="/"
-          className="px-5 py-4 border-b border-zinc-700 no-underline text-white text-xl"
+          className="px-4 py-4 border-b border-zinc-700 no-underline text-white text-xl"
           onClick={onClose}
         >
           Home

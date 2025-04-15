@@ -11,19 +11,19 @@ export default function LocateUs() {
 
   return (
     <motion.div
-      className="relative bg-gradient-to-br from-[#f0f4ff] to-white md:h-screen flex flex-col items-center justify-center px-2 md:p-20 rounded-2xl shadow-2xl overflow-hidden"
+      className="relative bg-black py-10 flex flex-col items-center justify-center px-2 md:px-20  shadow-2xl overflow-hidden"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <motion.h2
-        className="text-4xl font-extrabold text-gray-800 mb-4 relative w-fit"
-        initial={{ opacity: 0, x: -20 }}
+        className="text-4xl font-semibold text-white mb-4 relative w-fit"
+        // initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
         Locate Us
-        <span className="absolute left-0 -bottom-1 w-1/3 h-1 bg-red-500 rounded-full" />
+        {/* <span className="absolute left-0 -bottom-1 w-1/3 h-1 bg-red-500 rounded-full" /> */}
       </motion.h2>
 
       <motion.p

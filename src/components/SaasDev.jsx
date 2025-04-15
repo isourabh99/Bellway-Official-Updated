@@ -49,9 +49,9 @@ const cards = [
 
 const SaasDev = () => {
   return (
-    <section className="bg-zinc-950 text-white py-24 px-6 md:px-16">
+    <section className="bg-zinc-100  py-20 px-2 md:px-16">
       <motion.h2
-        className="text-4xl md:text-5xl font-bold text-center mb-16"
+        className="text-4xl md:text-4xl font-semibold text-center mb-16"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -90,7 +90,7 @@ const SaasDev = () => {
         </p>
         <a
           href="/contact"
-          className="px-6 py-3 bg-red-500 hover:bg-red-400 text-white font-semibold rounded-full transition duration-300"
+          className="px-6 py-3 bg-[#d82c2c]  hover:bg-red-700 text-white font-semibold rounded-full transition duration-300"
         >
           Estimate My SaaS Project
         </a>

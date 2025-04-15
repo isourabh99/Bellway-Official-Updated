@@ -34,7 +34,7 @@ const WhatWeDeliver = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl md:text-5xl font-bold text-center text-zinc-800 mb-16"
+        className="text-4xl  font-semibold text-center text-zinc-800 mb-20"
       >
         What We Deliver
       </motion.h2>

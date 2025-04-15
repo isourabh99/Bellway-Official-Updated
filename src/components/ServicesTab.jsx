@@ -18,14 +18,14 @@ const ServicesTab = ({
   if (!tabsData.length) return null;
 
   return (
-    <div className="w-full px-4 md:px-20 my-20">
+    <div className="w-full px-2 md:px-20 bg-zinc-100 pt-20">
       {heading && (
-        <h2 className="text-center text-2xl md:text-4xl font-bold mb-10 ">
+        <h2 className="text-center text-4xl md:text-4xl font-semibold mb-10 ">
           {heading}
         </h2>
       )}
 
-      <div className="flex flex-wrap justify-center gap-4 mb-6">
+      <div className="flex flex-wrap justify-center gap-4 mb-10">
         {tabsData.map((item, index) => (
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -34,7 +34,7 @@ const ServicesTab = ({
             onClick={() => setActiveTab(index)}
             className={`text-sm md:text-base font-medium px-5 py-2 rounded-full transition-all duration-300 border-2 ${
               activeTab === index
-                ? "bg-red-500 text-white border-white"
+                ? "bg-[#d82c2c] text-white border-white"
                 : "bg-transparent  border-zinc-900 "
             }`}
           >

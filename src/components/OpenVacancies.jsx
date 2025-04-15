@@ -63,8 +63,8 @@ function OpenVacancies() {
   }, []);
 
   return (
-    <div className="min-h-screen  px-2 md:px-20 py-20">
-      <h2 className="text-4xl font-bold text-center text-zinc-900 mb-20">
+    <div className="min-h-screen  px-2 md:px-20 py-10 bg-zinc-50">
+      <h2 className="text-4xl font-semibold text-center text-zinc-900 mb-20">
         🚀 Open Vacancies
       </h2>
 

@@ -17,7 +17,7 @@ const OurWork = () => {
         />
       </Helmet>
 
-      <p className="md:text-5xl text-3xl mt-4 text-center font-bold">
+      <p className="md:text-5xl text-3xl mt-4 text-center font-semibold">
         Explore Our <span className="text-[#d82c2c]">Recent Work</span>
       </p>
 
@@ -30,7 +30,7 @@ const OurWork = () => {
         {ourwork.map((card, index) => (
           <div
             key={index}
-            className="bg-white max-h-80 rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex  my-10 "
+            className="bg-white max-h-80 rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex   my-10 "
           >
             {card.image && (
               <img
@@ -40,7 +40,7 @@ const OurWork = () => {
               />
             )}
 
-            <div className="p-6 flex flex-col flex-grow">
+            <div className="p-2 md:p-6 flex flex-col flex-grow">
               <span className="text-xs text-[#d82c2c] font-semibold uppercase tracking-wide mb-2">
                 {card.category}
               </span>
